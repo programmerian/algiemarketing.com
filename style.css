@@ -1,0 +1,93 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(./img/background.jpg);
+    background-size: 1950px 1000px;
+    background-position: center center;
+    height: 100vh;
+    font-family: lato;
+}
+.home-bar
+{
+  background-color: lightgreen;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.home-bar ul h2
+{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 200;
+    margin: 15px;
+    padding: 10px;
+}
+
+.home-bar ul h2 a
+{
+    text-decoration: none;
+    color: black;
+}
+.active, .home-bar ul h2:hover
+{
+    background: lightblue;
+    border-radius: 3px;
+    text-decoration:  none;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.home-bar ul h2:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: lightgreen;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.home-bar ul h2:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.home-bar ul h2:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.home-bar ul h2:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.home-bar ul h2:hover .sub-menu-1 ul li a:hover
+{
+    color: lightblue;
+}
+.bagproduct ul h2
+{
+    color: black;
+    text-align: right;
+    text-size-adjust: 10;
+    text-rendering: auto;
+}
